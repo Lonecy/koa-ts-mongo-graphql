@@ -1,0 +1,42 @@
+{
+  "name": "todo-server",
+  "version": "1.0.0",
+  "description": "Todo Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "build-server": "tslint --project . && tsc",
+    "dev": "NODE_ENV=development nodemon --config nodemon.json",
+    "build": "NODE_ENV=production tsc ./"
+  },
+  "keywords": [
+    "Todo",
+    "Server"
+  ],
+  "author": "Morris.Mao",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^14.6.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-graphql": "^0.8.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^8.0.6",
+    "mongoose": "^5.8.9",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "@types/graphql": "^14.5.0",
+    "@types/koa": "^2.11.0",
+    "@types/koa-graphql": "^0.8.3",
+    "@types/koa-mount": "^4.0.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/mongoose": "^5.7.0",
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.3"
+  }
+}
